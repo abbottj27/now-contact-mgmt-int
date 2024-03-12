@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_1086370_contac_1.admin" name="x_1086370_contac_1.admin">68f4619747b40210057c31b4116d43cd</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-12 20:56:04</sys_created_on>
+        <sys_id>2cf4619747b40210057c31b4116d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>68f4619747b40210057c31b4116d43cd</sys_name>
+        <sys_package display_value="Contact Management Integrations" source="x_1086370_contac_1">d8f4619747b40210057c31b4116d4394</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2cf4619747b40210057c31b4116d43ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-12 20:56:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
