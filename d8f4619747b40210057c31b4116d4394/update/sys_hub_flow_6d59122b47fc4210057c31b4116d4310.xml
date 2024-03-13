@@ -14,7 +14,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>create_or_update_contact_in_other_instance</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛Contact Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["email"]}},{"name":"Created or Updated_1.current.id","label":"Trigger - Record Created or Updated➛Contact Record➛Id","reference":"","reference_display":"Id","type":"string","base_type":"string","parent_table_name":"x_1086370_contac_0_contact","column_name":"id","usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["id","email"]}},{"name":"Created or Updated_1.current.last_name","label":"Trigger - Record Created or Updated➛Contact Record➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1086370_contac_0_contact","column_name":"last_name","usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["last_name"]}},{"name":"Created or Updated_1.current.first_name","label":"Trigger - Record Created or Updated➛Contact Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1086370_contac_0_contact","column_name":"first_name","usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["first_name"]}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.first_name","label":"Trigger - Record Created or Updated➛Contact Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["first_name"]},"attributes":null},{"name":"Created or Updated_1.current.last_name","label":"Trigger - Record Created or Updated➛Contact Record➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["last_name"]},"attributes":null},{"name":"Created or Updated_1.current.id","label":"Trigger - Record Created or Updated➛Contact Record➛Id","reference":"","reference_display":"Id","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["id"]},"attributes":null},{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛Contact Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d":["email"]},"attributes":null},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Contact Record","reference":"x_1086370_contac_0_contact","reference_display":"Contact","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":null}]</label_cache>
         <master_snapshot>57d912eb47fc4210057c31b4116d4389</master_snapshot>
         <name>Create or Update Contact in other instance</name>
         <natlang/>
@@ -33,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6d59122b47fc4210057c31b4116d4310</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Create or Update Contact in other instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Contact Management Integrations" source="x_1086370_contac_1">d8f4619747b40210057c31b4116d4394</sys_package>
@@ -41,7 +41,7 @@
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name>sys_hub_flow_6d59122b47fc4210057c31b4116d4310</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:25:46</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:48:49</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=6d59122b47fc4210057c31b4116d4310"/>
@@ -96,10 +96,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:24:30</sys_created_on>
         <sys_id>819912e347fc4210057c31b4116d4323</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:25:46</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:49:36</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -114,10 +114,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:24:30</sys_created_on>
         <sys_id>059912e347fc4210057c31b4116d4324</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:24:30</sys_updated_on>
-        <value>unique_changes</value>
+        <sys_updated_on>2024-03-13 19:49:09</sys_updated_on>
+        <value>every</value>
         <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -168,7 +168,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -227,14 +227,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:25:04</sys_created_on>
         <sys_id>15b91eab47fc4210057c31b4116d434c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:25:45</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:49:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -359,7 +359,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -418,14 +418,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:25:04</sys_created_on>
         <sys_id>d9b91eab47fc4210057c31b4116d435e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:25:46</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:49:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -458,10 +458,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:24:30</sys_created_on>
         <sys_id>0999d6ab47fc4210057c31b4116d43c1</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:26:12</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:49:36</sys_updated_on>
         <ui_id>3fc2bb51-ae2b-4f2d-95c6-131b2251fa0d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0999d6ab47fc4210057c31b4116d43c1"/>
@@ -472,11 +472,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:25:43</sys_created_on>
         <sys_id>4fd912eb47fc4210057c31b4116d4322</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:25:43</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:48:45</sys_updated_on>
         <table>var__m_sys_hub_action_input_b784dae347fc4210057c31b4116d434e</table>
-        <value>{{Created or Updated_1.current.id}}</value>
+        <value>{{Created or Updated_1.current.email}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>first_name</field>
