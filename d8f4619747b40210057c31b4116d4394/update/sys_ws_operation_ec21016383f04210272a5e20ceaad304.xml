@@ -7,61 +7,94 @@
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
         <name>Create Contact</name>
-        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	const requestData = request.body.data;
-	let missingMandatoryFields = [];
-	
-	try {
-		const firstName = requestData.first_name ?? '';
-		if (firstName == '') {
-			missingMandatoryFields.push('first_name');
-		}
-		
-		const lastName = requestData.last_name ?? '';
-		if (lastName == '') {
-			missingMandatoryFields.push('last_name');
-		}
-		
-		const id = requestData.id ?? '';
-		if (id == '') {
-			missingMandatoryFields.push('id');
-		}
-		
-		const email = requestData.email ?? '';
-		if (email == '') {
-			missingMandatoryFields.push('email');
-		}
-		
-		if (missingMandatoryFields.length > 0) {
-			return new sn_ws_err.BadRequestError(`The following mandatory fields are missing: ${missingMandatoryFields}`);
-		}
-		
-		let contactGr = new GlideRecord('x_1086370_contac_0_contact');
-		contactGr.initialize();
-		contactGr.setValue('first_name', firstName);
-		contactGr.setValue('last_name', lastName);
-		contactGr.setValue('id', id);
-		contactGr.setValue('email', email);
-		const contactSysId = contactGr.insert();
-		
-		if (!contactSysId) {
-			let notCreatedErr = new sn_ws_err.ServiceError();
-			notCreatedErr.setMessage('An error occurred. Contact was not created');
-			notCreatedErr.setDetail(contactGr.getLastErrorMessage());
-			return notCreatedErr;
-		}
-		
-		response.setContentType('application/json');
-		response.setStatus(201);
-		response.setBody({
-			status: 'success',
-			message: 'Contact created',
-			sys_id: `${contactSysId}`
-		});
-		
-	} catch(e) {
-		return e;
-	}
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    const requestData = request.body.data;
+    let missingMandatoryFields = [];
+
+    try {
+        const firstName = requestData.first_name ?? '';
+        if (firstName == '') {
+            missingMandatoryFields.push('first_name');
+        }
+
+        const lastName = requestData.last_name ?? '';
+        if (lastName == '') {
+            missingMandatoryFields.push('last_name');
+        }
+
+        const id = requestData.id ?? '';
+        if (id == '') {
+            missingMandatoryFields.push('id');
+        }
+
+        const email = requestData.email ?? '';
+        if (email == '') {
+            missingMandatoryFields.push('email');
+        }
+
+        if (missingMandatoryFields.length > 0) {
+            return new sn_ws_err.BadRequestError(`The following mandatory fields are missing: ${missingMandatoryFields}`);
+        }
+
+        let createNewContact = false;
+
+        let contactGr = new GlideRecord('x_1086370_contac_0_contact');
+        contactGr.addQuery('id', id);
+        contactGr.query();
+        if (contactGr.next()) {
+			contactGr.setValue('first_name', firstName);
+			contactGr.setValue('last_name', lastName);
+			contactGr.setValue('email', email);
+			const updatedContactSysId = contactGr.update();
+
+			if (!updatedContactSysId) {
+				let notUpdatedErr = new sn_ws_err.ServiceError();
+				notUpdatedErr.setMessage('An error occurred. Contact was not updated.');
+				notUpdatedErr.setDetail(contactGr.getLastErrorMessage());
+				return notUpdatedErr;
+			}
+
+			response.setContentType('application/json');
+            response.setStatus(200);
+            response.setBody({
+                status: 'success',
+                message: `Contact with id ${id} already existed and has been updated`,
+                sys_id: `${updatedContactSysId}`
+            });
+
+        } else {
+            createNewContact = true;
+        }
+
+        if (createNewContact) {
+            let newContactGr = new GlideRecord('x_1086370_contac_0_contact');
+            newContactGr.initialize();
+            newContactGr.setValue('first_name', firstName);
+            newContactGr.setValue('last_name', lastName);
+            newContactGr.setValue('id', id);
+            newContactGr.setValue('email', email);
+            const newContactSysId = newContactGr.insert();
+
+            if (!newContactSysId) {
+                let notCreatedErr = new sn_ws_err.ServiceError();
+                notCreatedErr.setMessage('An error occurred. Contact was not created.');
+                notCreatedErr.setDetail(newContactGr.getLastErrorMessage());
+                return notCreatedErr;
+            }
+
+            response.setContentType('application/json');
+            response.setStatus(201);
+            response.setBody({
+                status: 'success',
+                message: 'Contact created',
+                sys_id: `${newContactSysId}`
+            });
+
+			return;
+        }
+    } catch (e) {
+        return e;
+    }
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_1086370_contac_1/contact_mgmt/contact</operation_uri>
@@ -77,14 +110,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 13:07:36</sys_created_on>
         <sys_id>ec21016383f04210272a5e20ceaad304</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Create Contact</sys_name>
         <sys_package display_value="Contact Management Integrations" source="x_1086370_contac_1">d8f4619747b40210057c31b4116d4394</sys_package>
         <sys_policy/>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name>sys_ws_operation_ec21016383f04210272a5e20ceaad304</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 13:07:36</sys_updated_on>
+        <sys_updated_on>2024-03-13 19:12:46</sys_updated_on>
         <web_service_definition display_value="Contact Management API">a8f00d2383f04210272a5e20ceaad33c</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
