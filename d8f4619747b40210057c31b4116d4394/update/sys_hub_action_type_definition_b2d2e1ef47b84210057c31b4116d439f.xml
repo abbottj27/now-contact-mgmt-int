@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2d2e1ef47b84210057c31b4116d439f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Create Contact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Contact Management Integrations" source="x_1086370_contac_1">d8f4619747b40210057c31b4116d4394</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b2d2e1ef47b84210057c31b4116d439f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -90,10 +90,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 15:29:22</sys_created_on>
         <sys_id>30c3216347f84210057c31b4116d436e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 18:50:11</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:20</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=30c3216347f84210057c31b4116d436e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -158,11 +158,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 15:29:23</sys_created_on>
         <sys_id>78c3216347f84210057c31b4116d4389</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 15:29:23</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:20</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_30c3216347f84210057c31b4116d436e</table>
-        <value>{{action.id}}</value>
+        <value>{{action.email}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>first_name</field>
@@ -674,12 +674,26 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 18:53:38</sys_created_on>
         <sys_id>74825a2347fc4210057c31b4116d4328</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:00:14</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:20</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=74825a2347fc4210057c31b4116d4328"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>74825a2347fc4210057c31b4116d4328</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 20:00:20</sys_created_on>
+        <sys_id>02c1a6a747308210057c31b4116d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 20:00:20</sys_updated_on>
+        <value>https://dev241124.service-now.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>74825a2347fc4210057c31b4116d4328</document_key>
@@ -859,6 +873,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-13 18:53:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>74825a2347fc4210057c31b4116d4328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 20:00:20</sys_created_on>
+        <sys_id>8ac1a6a747308210057c31b4116d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 20:00:20</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
@@ -1520,14 +1546,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 15:29:23</sys_created_on>
         <sys_id>78c3216347f84210057c31b4116d439d</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:34</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1815,17 +1841,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Contact">b2d2e1ef47b84210057c31b4116d439f</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e4941ee347fc4210057c31b4116d4341","name":"plan","plan_signature":null}}</plan>
-        <snapshot>9894dae347fc4210057c31b4116d43ce</snapshot>
+        <snapshot>efc12aa747308210057c31b4116d4389</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:02:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e4941ee347fc4210057c31b4116d4341</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:37</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:28</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1915,10 +1941,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:02:35</sys_created_on>
         <sys_id>0894dae347fc4210057c31b4116d4363</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:35</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:26</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0894dae347fc4210057c31b4116d4363"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1983,11 +2009,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:02:35</sys_created_on>
         <sys_id>cc94dae347fc4210057c31b4116d437d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:35</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:26</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_0894dae347fc4210057c31b4116d4363</table>
-        <value>{{action.id}}</value>
+        <value>{{action.email}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>first_name</field>
@@ -2499,10 +2525,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:02:36</sys_created_on>
         <sys_id>0894dae347fc4210057c31b4116d4380</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0894dae347fc4210057c31b4116d4380"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2588,6 +2614,20 @@
         <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
         <value>18409d8007482000dada43c0d1021e8f</value>
         <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0894dae347fc4210057c31b4116d4380</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 20:00:27</sys_created_on>
+        <sys_id>6bc12aa747308210057c31b4116d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
+        <value>https://dev241124.service-now.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -2684,6 +2724,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>0894dae347fc4210057c31b4116d4380</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 20:00:27</sys_created_on>
+        <sys_id>e7c12aa747308210057c31b4116d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
@@ -3432,14 +3484,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-13 19:02:36</sys_created_on>
         <sys_id>d894dae347fc4210057c31b4116d43c4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Contact Management Integrations">d8f4619747b40210057c31b4116d4394</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3465,21 +3517,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1c94dae347fc4210057c31b4116d43cd^sys_idNOT IN5494dae347fc4210057c31b4116d43ce,d094dae347fc4210057c31b4116d43ce"/>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-03-13 12:02:36">1c94dae347fc4210057c31b4116d43cd</action_status_metadata_id>
-        <condition>{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.code}}!=0</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label>REST step fails</label>
-        <order>2</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-13 19:02:36</sys_created_on>
-        <sys_id>5494dae347fc4210057c31b4116d43ce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
-    </sys_hub_status_condition>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1c94dae347fc4210057c31b4116d43cd^sys_idNOT IN2bc12aa747308210057c31b4116d4388,afc12aa747308210057c31b4116d4388"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2024-03-13 12:02:36">1c94dae347fc4210057c31b4116d43cd</action_status_metadata_id>
         <condition>{{step[708d5dcc-c569-4b9a-991d-3d3df964086b].__step_status__.code}}!=0</condition>
@@ -3488,11 +3526,25 @@
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[708d5dcc-c569-4b9a-991d-3d3df964086b].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[708d5dcc-c569-4b9a-991d-3d3df964086b].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-13 19:02:36</sys_created_on>
-        <sys_id>d094dae347fc4210057c31b4116d43ce</sys_id>
+        <sys_created_on>2024-03-13 20:00:27</sys_created_on>
+        <sys_id>2bc12aa747308210057c31b4116d4388</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-13 19:02:36</sys_updated_on>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2024-03-13 12:02:36">1c94dae347fc4210057c31b4116d43cd</action_status_metadata_id>
+        <condition>{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.code}}!=0</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>REST step fails</label>
+        <order>2</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[f3e74dce-3a21-4369-b34c-1b2f22b7803e].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 20:00:27</sys_created_on>
+        <sys_id>afc12aa747308210057c31b4116d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 20:00:27</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b784dae347fc4210057c31b4116d434e^sys_idNOT INc494dae347fc4210057c31b4116d4356,c494dae347fc4210057c31b4116d435d,cc94dae347fc4210057c31b4116d4359,cc94dae347fc4210057c31b4116d4360"/>
     <sys_documentation action="INSERT_OR_UPDATE">
