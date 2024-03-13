@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2ae6ad1b47b40210057c31b4116d432b" label="SN Instance" max_length="40" name="x_1086370_contac_1_sn_instance" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Connection Alias" mandatory="true" max_length="32" name="connection_alias" reference="sys_alias" type="reference"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="connection_alias"/>
+        </index>
+    </element>
+</database>
